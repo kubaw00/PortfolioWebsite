@@ -29,9 +29,9 @@ function removeMenu() {
 navLinks.forEach((link) => link.addEventListener('click', removeMenu));
 
 /*==================== ACCORDION SKILLS ====================*/
-const skillsHedaer = document.querySelector('.skills__header');
+const skillsHeader = document.querySelector('.skills__header');
 const skillContent = document.querySelector('.skills__content');
-skillsHedaer.addEventListener('click', () => {
+skillsHeader.addEventListener('click', () => {
   skillContent.classList.toggle('skills__close');
 });
 
@@ -63,6 +63,18 @@ courBtn.addEventListener('click', () => {
 /*==================== SERVICES MODAL ====================*/
 
 /*==================== PORTFOLIO SWIPER  ====================*/
+let swiper = new Swiper('.portfolio__container', {
+  cssMode: true,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
 
 /*==================== TESTIMONIAL ====================*/
 
