@@ -157,3 +157,24 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-theme', getCurrentTheme());
   localStorage.setItem('selected-icon', getCurrentIcon());
 });
+
+/*==================== Music ====================*/
+
+let music = new Audio('assets/music/Herbal Tea.mp3');
+
+console.log(music);
+const playBtn = document.querySelector('.uil-play');
+const pauseBtn = document.querySelector('.uil-pause');
+
+playBtn.addEventListener('click', () => {
+  music.play();
+  music.volume = 0.05;
+  playBtn.classList.remove('active');
+  pauseBtn.classList.add('active');
+});
+
+pauseBtn.addEventListener('click', () => {
+  music.pause();
+  playBtn.classList.add('active');
+  pauseBtn.classList.remove('active');
+});

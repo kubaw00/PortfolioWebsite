@@ -486,9 +486,6 @@ img {
   width: 20%;
 }
 
-.skills__close {
-}
-
 .skills__close .skills__list {
   height: 0;
   overflow: hidden;
@@ -1033,4 +1030,42 @@ img {
   .contact__content:nth-child(3) {
     grid-column: 1 / span 2;
   }
+}
+
+/*----------------MUSIC--------------------*/
+.music {
+  display: inline;
+  margin-left: 20px;
+}
+
+.uil-play {
+  font-size: 1.5rem;
+  color: var(--first-color);
+  display: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.uil-pause {
+  font-size: 1.5rem;
+  color: var(--first-color);
+  display: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.uil-play:hover {
+  color: black;
+}
+
+.uil-pause:hover {
+  color: black;
+}
+
+.active {
+  display: inline;
+}
+
+.uil > span {
+  font-size: 0.8rem;
 }
