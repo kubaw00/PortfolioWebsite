@@ -60,8 +60,6 @@ courBtn.addEventListener('click', () => {
   eduBtn.classList.remove('qualification__active');
 });
 
-/*==================== SERVICES MODAL ====================*/
-
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiper = new Swiper('.portfolio__container', {
   cssMode: true,
@@ -75,8 +73,6 @@ let swiper = new Swiper('.portfolio__container', {
     clickable: true,
   },
 });
-
-/*==================== TESTIMONIAL ====================*/
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]');
@@ -134,6 +130,7 @@ const selectedIcon = localStorage.getItem('selected-icon');
 // We obtain the current theme that the interface has by validating the dark-theme class
 const getCurrentTheme = () =>
   document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+
 const getCurrentIcon = () =>
   themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun';
 
