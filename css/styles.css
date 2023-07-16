@@ -355,6 +355,7 @@ img {
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
+  cursor: pointer;
 }
 
 .button:hover {
@@ -1068,4 +1069,15 @@ img {
 
 .uil > span {
   font-size: 0.8rem;
+}
+
+button[type='submit'] {
+  border: none;
+}
+
+.container.greet h1 {
+  margin: 5rem 0;
+  border: solid var(--first-color-lighter) 2px;
+  padding: 5rem;
+  border-radius: 1rem;
 }

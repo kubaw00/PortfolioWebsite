@@ -157,7 +157,7 @@ themeButton.addEventListener('click', () => {
 
 /*==================== Music ====================*/
 
-let music = new Audio('assets/music/Herbal Tea.mp3');
+let music = new Audio('music/Herbal_Tea.mp3');
 
 console.log(music);
 const playBtn = document.querySelector('.uil-play');
