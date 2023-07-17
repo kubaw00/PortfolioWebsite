@@ -1073,6 +1073,7 @@ img {
 
 button[type='submit'] {
   border: none;
+  cursor: pointer;
 }
 
 .container.greet h1 {
